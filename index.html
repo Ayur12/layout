@@ -4,19 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
     <title>Les1</title>
 </head>
 
 <body>
-    <header>
-        logo-img
-        loupe-img
-        <button>
-            menu-img
-        </button>
-        <a href="#">person-img</a>
-        <a href="#">cart-img</a>
-        <nav>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__controls">
+                    <img class="header__logo" src="img/logo.svg" alt="logo" width="44" height="38">
+                    <img src="img/loupe.svg" alt="loupe" width="26" height="27">
+                </div>
+                <div class="header__controls">
+                    <button class="header__button">
+                        <img src="img/menu.png" alt="menu">
+                    </button>
+                    <a class="header__person-link" href="#"><img src="img/profile.svg" alt="profile"></a>
+                    <a href="#"><img src="img/basket.png" alt="basket"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="header__navigation">
             menu
             <ul>
                 <li>
@@ -50,27 +63,30 @@
         </nav>
     </header>
     <main>
-        <section>
-            man-img
-            <h1>THE BRAND OF LUXERIOUS FASHION</h1>
+        <section class="brand">
+            <img src="img/brand.png" alt="brand">
+            <div class="brand__title-wrapper">
+                <h1 class="brand__title">The brand<span class="brand__subtitle">of luxerious<span
+                            class="brand__subtitle-pink"> fashion</span></span></h1>
+            </div>
         </section>
-        <section>
-            <h2>offers</h2>
-            <ul>
-                <li>
+        <section class="offers container">
+            <h2 class="visually-hidden">offers</h2>
+            <ul class="offers__list">
+                <li class="offers__item offers__item-woman">
                     <h3>30% off</h3>
                     <p>for women</p>
                 </li>
 
-                <li>
+                <li class="offers__item offers__item-man">
+                    <h3>hot deal</h3>
+                    <p>for men</p>
+                </li>
+                <li class="offers__item offers__item-kids">
                     <h3>30% off</h3>
                     <p>for women</p>
                 </li>
-                <li>
-                    <h3>30% off</h3>
-                    <p>for women</p>
-                </li>
-                <li>
+                <li class="offers__item offers__item-accesories">
                     <h3>30% off</h3>
                     <p>for women</p>
                 </li>
@@ -84,42 +100,42 @@
             <ul>
                 <li>
                     img
-                    <h3>ELLERY X M'O CAPSULE</h3>
+                    <h3>Ellery x m'o capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p>$52.00</p>
                 </li>
                 <li>
                     img
-                    <h3>ELLERY X M'O CAPSULE</h3>
+                    <h3>Ellery x m'o capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p>$52.00</p>
                 </li>
                 <li>
                     img
-                    <h3>ELLERY X M'O CAPSULE</h3>
+                    <h3>Ellery x m'o capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p>$52.00</p>
                 </li>
                 <li>
                     img
-                    <h3>ELLERY X M'O CAPSULE</h3>
+                    <h3>Ellery x m'o capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p>$52.00</p>
                 </li>
                 <li>
                     img
-                    <h3>ELLERY X M'O CAPSULE</h3>
+                    <h3>Ellery x m'o capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p>$52.00</p>
                 </li>
                 <li>
                     img
-                    <h3>ELLERY X M'O CAPSULE</h3>
+                    <h3>Ellery x m'o capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p>$52.00</p>
@@ -134,7 +150,6 @@
                     <h3>Free Delivery</h3>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.</p>
-
                 </li>
                 <li>
                     img
@@ -158,8 +173,8 @@
                 <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
             </div>
             <div>
-                <h3>SUBSCRIBE</h3>
-                <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                <h3>Subscribe</h3>
+                <p>For our newletter and promotion</p>
                 <button><a href="#">Subscribe</a> </button>
             </div>
         </section>
