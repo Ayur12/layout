@@ -3,6 +3,10 @@
     --pink: #F1E4E6;
     --dark-pink: #F16D7F;
     --brown: #474040;
+    --grey: #9F9F9F;
+    --white: #ffffff;
+    --dark-brown: rgba(33, 22, 22, 0.7);
+    --grey-2: #F8F8F8;
 }
 body {
     font-family: Lato;
@@ -11,7 +15,9 @@ body {
     font-weight: 400;
     line-height: 19px;    
 }
-
+main {
+    margin: 0 auto;
+}
 .container {
     width: 1138px;
     margin: 0 auto;
@@ -52,9 +58,13 @@ body {
     margin: 0 33px 0 0;
 }
 
+.container__brand {
+    width: 1600px;
+    margin: 0 auto
+}
 .brand {
     display: flex;
-    margin: 0 0 63px;
+    padding: 0 0 63px;    
 }
 .brand__title {   
     font-size: 48px;
@@ -90,12 +100,30 @@ body {
 .offers__item {    
     width: 360px;
     min-height: 260px;
-    background-image: var(--brown);
+    background-color: var(--dark-brown);
     margin: 0 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.offers__title { 
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 19px;    
+    text-transform: uppercase;
+    color: var(--white);    
+}
+
+.offers__subtitles {  
+    display: block; 
+    font-size: 18px;    
+    font-weight: 900;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--dark-pink);    
+}
+
 .offers__item-woman {
     background-image: url(../img/women.png);
 }
@@ -109,4 +137,172 @@ body {
     background-image: url(../img/accesories.png);
     width: 100%;
     min-height: 180px;
+}
+
+.fetured__title {
+    display: block;
+    text-align: center;
+    font-size: 30px;    
+    font-weight: 400;
+    line-height: 36px;
+    margin: 67px 0 0 0;
+}
+
+.fetured__title-subtitle {
+    
+    text-align: center;    
+    font-size: 14px;    
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--grey);
+    margin: 6px 0 48px 0;
+}
+
+.products__list {
+   display: flex;   
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.products__list__product {
+    width: 360px;
+    height: 581px; 
+    background-color: var(--grey-2); 
+    margin: 0 0 30px;             
+}
+
+.product-2 {
+    width: 360px;
+    height: 420px; 
+    background-color: var(--pink);
+    text-align: center;
+}
+.products__title {
+    font-size: 13px;    
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 25px 0 13px 18px;
+}
+.products__description {
+    font-size: 14px;    
+    font-weight: 300;
+    line-height: 17px;
+    color: var(--grey);
+    margin: 0 18px 18px 18px;
+}
+
+.products__price {    
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--dark-pink);
+    margin: 0 0 0 18px;
+}
+
+.button__product {
+    width: 211px;
+    height: 47px;
+    border: 1px solid #FF6A6A;    
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 19px;      
+    color: #F26376;
+    margin: 0 auto;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages {
+    background-color: var(--dark-blue);
+    margin: 95.5px 0 0 0;
+}
+.advantages__list {
+    display: flex;
+    justify-content: space-between;    
+}
+.advantages__advantage {
+    text-align: center;
+    margin: 103px 0 103px 0;
+}
+
+.advantages__title {    
+    font-size: 20px;    
+    font-weight: 400;
+    line-height: 24px;
+    margin: 28px 0 14px;
+    color: var(--white);
+}
+
+.advantages__description {    
+    width: 360px;
+    min-height: 36px;
+    font-size: 14px;    
+    font-weight: 300;
+    line-height: 17px;    
+    color: var(--white);
+}
+
+.form {
+    width: 1600px;
+    height: 448px;
+    background-image: url(../img/form.png);
+    margin: 0 auto;
+    opacity: 0.4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form__block-1 {
+    width: 50%;
+    text-align: center;
+}
+
+.form__block-2 {
+    width: 50%;
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--dark-blue);
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {    
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 19px;   
+    color: var(--white);
+    margin: 30px 0 30px 235px;
+}
+
+.footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 24px 230px 0;    
+}
+
+.footer__img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--white)
+}        
+
+.footer__img-instagram {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--dark-pink);
 }
