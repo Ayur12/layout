@@ -1,13 +1,13 @@
 .cart {
-    width: 1138px;
+    width: 71%;
     margin: 0 auto;
     display: flex;
     &__shopping {
         margin: 96px 0 0 0;
     }
+
     &__product {
-        width: 652px;
-        height: 306px;
+        @include box-size(652px, 306px);        
         box-shadow: 10px 10px 20px 0 $mercury;
         display: flex;         
         position: relative;  
@@ -21,17 +21,14 @@
     &__content h3 {   
         width: 210px;
         min-height: 58px;
-        margin-bottom: 42px;     
-        font-size: 24px;        
-        font-weight: 400;
-        line-height: 29px;      
+        margin-bottom: 42px;  
+        @include font(24px, 29px, 400);        
         text-transform: uppercase;
         color: $black;
     }
-    &__content li {        
-        font-size: 22px;        
-        font-weight: 400;
-        line-height: 26px;
+
+    &__content li {    
+        @include font(22px, 26px, 400);    
         margin-bottom: 6px;
         color: $scorpion;
     }
@@ -55,19 +52,15 @@
     }
 
     &__button {
-        width: 224px;
-        height: 49px;
+        @include box-size(224px, 49px);
         border: 1px solid $scorpion;
         background-color: $white;
-        text-transform: uppercase;       
-        font-size: 14px;        
-        font-weight: 300;
-        line-height: 17px;  
+        text-transform: uppercase;  
+        @include font(14px, 17px, 300);       
     }
 
     &__button-form {
-        width: 101px;
-        height: 35px;
+        @include box-size(101px, 35px);
         margin-top: 24px;
     }
 
@@ -77,9 +70,7 @@
 
     &__legend {     
         margin: 113px 0 0 0;   
-        font-size: 16px;        
-        font-weight: 300;
-        line-height: 19px;
+        @include font(16px, 19px, 300);
         text-transform: uppercase;
         color: $black;
     }
@@ -87,26 +78,21 @@
     &__input {
         width: 360px;
         min-height: 44px;
-        outline: 1px solid $silver;        
-        font-size: 13px;        
-        font-weight: 300;
-        line-height: 16px;  
+        outline: 1px solid $silver; 
+        @include font(13px, 16px, 300);        
         padding-left: 17px; 
         box-sizing: border-box; 
         margin-top: 21px;   
     }
 
     &__proceed {
-        width: 360px;
-        height: 214px;
+        @include box-size(360px, 214px);
         background-color: $wild_sand;
         margin-top: 58px;
     }
 
     &__subtotal {
-        font-size: 11px;        
-        font-weight: 400;
-        line-height: 13px; 
+        @include font(11px, 13px, 400); 
         color: $silver; 
         text-transform: uppercase;
         text-align: right;
@@ -118,9 +104,7 @@
     }
 
     &__grandtotal {        
-        font-size: 16px;        
-        font-weight: 300;
-        line-height: 19px;
+        @include font(16px, 19px, 300);
         color: $black;
         text-transform: uppercase;
         text-align: right;
@@ -128,16 +112,13 @@
     }
 
     &__grandtotal span {        
-        font-size: 16px;        
-        font-weight: 700;
-        line-height: 19px;
+        @include font(16px, 19px, 700);
         color: $dark-pink;
         padding-left: 30px;
     }
 
     &__button-checkout {
-        width: 273px;
-        height: 50px;
+        @include box-size(273px, 50px);
         margin: 39px 0px 42px 44px;
         text-transform: uppercase;
         color: $white;

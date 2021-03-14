@@ -1,4 +1,6 @@
 .offers {
+    max-width: 1600px;
+    margin: 0 auto;
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -19,9 +21,7 @@
         left: 37%;
     }
     &__title { 
-        font-size: 16px;    
-        font-weight: 400;
-        line-height: 19px;    
+        @include font(16px, 19px, 400);    
         text-transform: uppercase;
         color: $white;  
         text-align: center; 
@@ -29,21 +29,22 @@
     
     &__subtitles {  
         display: block; 
-        font-size: 18px;    
-        font-weight: 900;
-        line-height: 22px;
+        @include font(18px, 23px, 900);
         text-transform: uppercase;
         color: $dark-pink;  
         text-align: center;  
     }
     
     &__item-woman {
+        @include box-size(32%, auto);
         background-image: url(../img/women.png);
     }
     &__item-man {
+        @include box-size(32%, auto);
         background-image: url(../img/men.png);
     }
     &__item-kids {
+        @include box-size(32%, auto);
         background-image: url(../img/kids.png);
     }
     &__item-accesories {
@@ -54,3 +55,29 @@
     
 }
 
+@media (width: 768px) {
+    .offers__title {
+        @include font(16px, 16px, 400)
+    }
+    .offers__subtitles {
+        @include font(24px, 29px, 700)
+    }
+}
+
+@media (width: 375px) {
+    .offers__list {
+        display: block;
+    }
+    .offers__item-woman {
+        width: 100%;
+        height: auto;
+    }
+    .offers__item-man {
+        width: 100%;
+        height: auto;
+    }
+    .offers__item-kids {
+        width: 100%;
+        height: auto;
+    }
+}

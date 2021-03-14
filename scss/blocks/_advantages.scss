@@ -1,5 +1,6 @@
 .advantages {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
     background-color: $dark-blue;
     
@@ -13,10 +14,8 @@
         margin: 103px 0 103px 0;
     }
     
-    &__title {    
-        font-size: 20px;    
-        font-weight: 400;
-        line-height: 24px;
+    &__title { 
+        @include font(20px, 24px, 400);   
         margin: 28px 0 14px;
         color: $white;
     }
@@ -24,9 +23,23 @@
     &__description {    
         width: 360px;
         min-height: 36px;
-        font-size: 14px;    
-        font-weight: 300;
-        line-height: 17px;    
+        @include font(14px, 17px, 300);   
         color: $white;
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages__list {
+        flex-direction: column;
+    }
+    .advantages__advantage {
+        margin: 0 auto;
+        align-self: center;
+    }
+    .advantages__img {
+        margin-top: 48px;
+    }
+    .advantages__description-bottom {
+        margin-bottom: 64px;
     }
 }

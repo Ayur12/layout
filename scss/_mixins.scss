@@ -4,3 +4,8 @@
     font-weight: $weight;
     font-style: $style;
 }
+
+@mixin box-size($width, $height) {
+    width: $width;
+    height: $height
+}

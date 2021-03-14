@@ -1,6 +1,7 @@
 
 .header {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
     background-color: $dark-blue;
 
@@ -30,3 +31,14 @@
     }
 }
 
+@media (max-width:375px) {
+    .header__basket {
+        display: none;
+    }
+    .header__person-link {
+        display: none;
+    }
+    .header__button {
+        margin: 0;
+    }
+}

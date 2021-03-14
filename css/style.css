@@ -64,7 +64,7 @@ main {
 }
 
 .container {
-  width: 1138px;
+  width: 71%;
   margin: 0 auto;
 }
 
@@ -79,8 +79,15 @@ main {
   clip: rect(0 0 0 0);
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
+}
+
 .header {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #222222;
 }
@@ -110,9 +117,41 @@ main {
   margin: 0 33px 0 0;
 }
 
+@media (max-width: 375px) {
+  .header__basket {
+    display: none;
+  }
+  .header__person-link {
+    display: none;
+  }
+  .header__button {
+    margin: 0;
+  }
+}
+
 .brand {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.brand__wrapper {
   display: flex;
   padding: 0 0 63px;
+}
+
+.brand__img {
+  width: 50%;
+  height: auto;
+}
+
+.brand__title-wrapper {
+  width: 50%;
+  padding: 0 0 0 91px;
+  background-color: #F1E4E6;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .brand__title {
@@ -133,23 +172,58 @@ main {
   left: -30px;
 }
 
-.brand__title-wrapper {
-  padding: 0 0 0 91px;
-  background-color: #F1E4E6;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
 .brand__subtitle {
   display: block;
   font-size: 37px;
-  font-weight: 700;
   line-height: 44px;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .brand__subtitle-pink {
   color: #F16D7F;
+}
+
+@media (max-width: 768px) {
+  .barnd__title {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+    font-style: normal;
+  }
+  .brand__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand__title-wrapper {
+    min-height: 363px;
+    padding: 0 0 0 56px;
+  }
+  .barnd__title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
+  }
+  .brand__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .brand__img {
+    display: none;
+  }
+}
+
+.offers {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .offers__list {
@@ -174,8 +248,9 @@ main {
 
 .offers__title {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -184,22 +259,29 @@ main {
 .offers__subtitles {
   display: block;
   font-size: 18px;
+  line-height: 23px;
   font-weight: 900;
-  line-height: 22px;
+  font-style: normal;
   text-transform: uppercase;
   color: #F16D7F;
   text-align: center;
 }
 
 .offers__item-woman {
+  width: 32%;
+  height: auto;
   background-image: url(../img/women.png);
 }
 
 .offers__item-man {
+  width: 32%;
+  height: auto;
   background-image: url(../img/men.png);
 }
 
 .offers__item-kids {
+  width: 32%;
+  height: auto;
   background-image: url(../img/kids.png);
 }
 
@@ -209,22 +291,63 @@ main {
   min-height: 180px;
 }
 
+@media (width: 768px) {
+  .offers__title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .offers__subtitles {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@media (width: 375px) {
+  .offers__list {
+    display: block;
+  }
+  .offers__item-woman {
+    width: 100%;
+    height: auto;
+  }
+  .offers__item-man {
+    width: 100%;
+    height: auto;
+  }
+  .offers__item-kids {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .fetured__title {
   display: block;
   text-align: center;
   font-size: 30px;
-  font-weight: 400;
   line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
   margin: 67px 0 0 0;
 }
 
 .fetured__title-subtitle {
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
-  color: var(--grey);
+  font-weight: 400;
+  font-style: normal;
+  color: #9F9F9F;
   margin: 6px 0 48px 0;
+}
+
+.products {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .products__list {
@@ -240,7 +363,7 @@ main {
   margin: 0 0 30px;
 }
 
-.product-2 {
+.products__product-2 {
   width: 360px;
   height: 420px;
   background-color: #F1E4E6;
@@ -278,12 +401,13 @@ main {
 }
 
 .button__product {
-  width: 211px;
+  width: 311px;
   height: 47px;
   border: 1px solid #FF6A6A;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   color: #F26376;
   margin: 48px 0 95px 0;
   display: flex;
@@ -292,7 +416,8 @@ main {
 }
 
 .advantages {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #222222;
 }
@@ -309,8 +434,9 @@ main {
 
 .advantages__title {
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
   margin: 28px 0 14px;
   color: #ffffff;
 }
@@ -319,13 +445,31 @@ main {
   width: 360px;
   min-height: 36px;
   font-size: 14px;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .advantages__list {
+    flex-direction: column;
+  }
+  .advantages__advantage {
+    margin: 0 auto;
+    align-self: center;
+  }
+  .advantages__img {
+    margin-top: 48px;
+  }
+  .advantages__description-bottom {
+    margin-bottom: 64px;
+  }
+}
+
 .form {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   height: 448px;
   margin: 0 auto;
   display: block;
@@ -364,19 +508,18 @@ main {
   opacity: 1;
   padding: 0 230px 0 230px;
   font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-style: italic;
   color: #222224;
 }
 
 .form__text2 {
-  font-family: Lato;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0em;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
   color: #222224;
@@ -384,8 +527,9 @@ main {
 
 .form__title {
   font-size: 24px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   color: #222224;
 }
@@ -411,9 +555,9 @@ main {
   border: 0.01px solid #F8F8F8;
   border-radius: 30px 0 0 30px;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .form__button {
@@ -425,14 +569,39 @@ main {
   border-radius: 0 30px 30px 0;
 }
 
+@media (max-width: 768px) {
+  .form__wrapper {
+    height: 693px;
+    display: block;
+  }
+  .form__block-1 {
+    margin: 0 auto;
+  }
+  .form__block-2 {
+    margin: 0 auto;
+  }
+  .form__title {
+    margin-top: 48px;
+  }
+  .form__text1 {
+    padding: 0;
+  }
+  .form__img {
+    margin-top: 54px;
+  }
+  .form::after {
+    background-image: url(../img/form-tablet.png);
+  }
+}
+
 .footer {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #222222;
   min-height: 79px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .footer__wrapper {
@@ -444,8 +613,9 @@ main {
 
 .footer__copyright {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   color: #ffffff;
 }
 
@@ -495,9 +665,9 @@ main {
 
 .registration__title {
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   text-align: left;
   text-transform: uppercase;
   color: #F16D7F;
@@ -514,7 +684,7 @@ main {
 }
 
 .registration__container {
-  width: 1138px;
+  width: 71%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -534,10 +704,12 @@ main {
   color: #ffffff;
   font-family: Lato;
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   margin: 39px 0 96px 0;
+  border: none;
 }
 
 .registration__enter {
@@ -556,39 +728,42 @@ main {
   width: 360px;
   min-height: 32px;
   margin: 16px 0 0 0;
-  font-family: Lato;
   font-size: 13px;
-  font-weight: 300;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
   color: #B1B1B1;
 }
 
 .registration__title {
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   color: #F16D7F;
   margin: 0 0 22px 0;
 }
 
 .registration__subtitle {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
   margin: 0 0 22px 0;
   color: #000000;
 }
 
 .registration__bonus {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
   color: #000000;
   margin: 0 0 16px 0;
 }
 
 .cart {
-  width: 1138px;
+  width: 71%;
   margin: 0 auto;
   display: flex;
 }
@@ -615,16 +790,18 @@ main {
   min-height: 58px;
   margin-bottom: 42px;
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   color: #222224;
 }
 
 .cart__content li {
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 6px;
   color: #575757;
 }
@@ -654,8 +831,9 @@ main {
   background-color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .cart__button-form {
@@ -671,8 +849,9 @@ main {
 .cart__legend {
   margin: 113px 0 0 0;
   font-size: 16px;
-  font-weight: 300;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   text-transform: uppercase;
   color: #222224;
 }
@@ -682,8 +861,9 @@ main {
   min-height: 44px;
   outline: 1px solid #A4A4A4;
   font-size: 13px;
-  font-weight: 300;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
   padding-left: 17px;
   box-sizing: border-box;
   margin-top: 21px;
@@ -698,8 +878,9 @@ main {
 
 .cart__subtotal {
   font-size: 11px;
-  font-weight: 400;
   line-height: 13px;
+  font-weight: 400;
+  font-style: normal;
   color: #A4A4A4;
   text-transform: uppercase;
   text-align: right;
@@ -712,8 +893,9 @@ main {
 
 .cart__grandtotal {
   font-size: 16px;
-  font-weight: 300;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   color: #222224;
   text-transform: uppercase;
   text-align: right;
@@ -722,8 +904,9 @@ main {
 
 .cart__grandtotal span {
   font-size: 16px;
-  font-weight: 700;
   line-height: 19px;
+  font-weight: 700;
+  font-style: normal;
   color: #F16D7F;
   padding-left: 30px;
 }
