@@ -47,7 +47,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px){
     .barnd__title {
         @include font(44px, 53px, 900);          
     }
@@ -57,13 +57,14 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (min-width:370px) and (max-width: 767px) {
     .brand__title-wrapper {
         min-height: 363px;
-        padding: 0 0 0 56px;
+        width: 64%;
+        padding-left: 18%;
     }
     
-    .barnd__title {
+    .brand__title {
         @include font(38px, 46px, 900);          
     }
 

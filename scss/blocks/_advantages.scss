@@ -21,14 +21,14 @@
     }
     
     &__description {    
-        width: 360px;
+        width: 93%;
         min-height: 36px;
         @include font(14px, 17px, 300);   
         color: $white;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 370px) and (max-width: 1024px) {
     .advantages__list {
         flex-direction: column;
     }
@@ -41,5 +41,9 @@
     }
     .advantages__description-bottom {
         margin-bottom: 64px;
+    }
+    .advantages__description {    
+        width: 50%;
+        padding-left: 25%;
     }
 }

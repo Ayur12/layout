@@ -38,24 +38,36 @@
     &__item-woman {
         @include box-size(32%, auto);
         background-image: url(../img/women.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     &__item-man {
         @include box-size(32%, auto);
         background-image: url(../img/men.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     &__item-kids {
         @include box-size(32%, auto);
         background-image: url(../img/kids.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     &__item-accesories {
         background-image: url(../img/accesories.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         width: 100%;
         min-height: 180px;
     }
     
 }
 
-@media (width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .offers__title {
         @include font(16px, 16px, 400)
     }
@@ -64,7 +76,7 @@
     }
 }
 
-@media (width: 375px) {
+@media (min-width: 370px) and (max-width: 767px) {
     .offers__list {
         display: block;
     }
@@ -77,6 +89,10 @@
         height: auto;
     }
     .offers__item-kids {
+        width: 100%;
+        height: auto;
+    }
+    .offers__item-accesories {
         width: 100%;
         height: auto;
     }

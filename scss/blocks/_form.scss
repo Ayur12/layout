@@ -1,12 +1,15 @@
 .form {
     width: 100%;
-    max-width: 1600px;
-    height: 448px;    
+    max-width: 1600px;  
     margin: 0 auto; 
-    display: block;
-    position: relative;  
+    background-image: url(../img/form.png);
+    background-size: cover;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    /*display: block;
+    position: relative;  */
     
-    &::after {
+   /* &::after {
         content: "";
         background-image: url(../img/form.png);
         opacity: 0.4;
@@ -16,7 +19,7 @@
         right: 0;
         position: absolute;
         z-index: -1;    
-    }
+    }*/
     
     &__wrapper {
         height: 100%;
@@ -24,21 +27,21 @@
         align-items: center;
         justify-content: space-between;
     }
+
     &__block-1 {
         width: 50%;
         text-align: center;
     }
     
     &__text1 {
-        width: 360px;
+        width: 45%;
         min-height: 99px;
         display: flex;
         align-items: center;
-        opacity: 1;
-        padding: 0 230px 0 230px;
         @include font(20px, 24px, 400);        
         font-style: italic;        
         color: $black;
+
     }
     
     &__text2 {
@@ -47,6 +50,7 @@
         text-transform: uppercase;
         color: $black;
     }
+
     &__title {   
         @include font(24px, 38px, 700);        
         text-transform: uppercase;    
@@ -84,25 +88,30 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 370px) and (max-width: 1024px) {
     .form__wrapper {
         display: block;
     }
     .form__block-1 {
+        width: 100%;
         margin: 0 auto;
+        scroll-padding-top: 54px;
     }
     .form__block-2 {
+        width: 100%;
         margin: 0 auto;
+        padding-bottom: 140px;
     }
     .form__title {
         margin-top: 48px;
     }
     .form__text1 {
-        padding: 0;
+        padding-left: 27%;
     }
     .form__img {
         margin-top: 54px;
     }
+    /*
     .form {
         width: 100%;
         height: auto;   
@@ -110,5 +119,5 @@
     .form::after {
         content: '';
         background-image: url(../img/form-tablet.png); 
-    }
+    }*/
 }
