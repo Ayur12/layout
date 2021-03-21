@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--подключаем стили css reset (обнуление)-->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- подключение шрифтов-->
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <title>Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--подключаем стили css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Catalog</title>
 </head>
 
 <body>
@@ -40,153 +45,130 @@
                 </div>
                 <div class="header__controls">
                     <button class="header__button">
-                        <a href="catalog.html"><img src="img/menu.png" alt="menu"></a>
+                        <img src="img/menu.png" alt="menu">
                     </button>
                     <a class="header__person-link" href="registration.html"><img src="img/profile.svg"
                             alt="profile"></a>
-                    <a class="header__basket" href="cart.html"><img src="img/basket.png" alt="basket"></a>
+                    <a href="cart.html"><img src="img/basket.png" alt="basket"></a>
                 </div>
             </div>
         </div>
-        <nav class="header__navigation">
-            <h2 class="header__menu">menu</h2>
-            <ul>
-                <li>
-                    <h2 class="header__menu-title">man</h2>
-                    <ul class="header__menu-list">
-                        <li><a class="header__menu-subtitle" href="#">Accessories</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Bags</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Denim</a></li>
-                        <li class="header__menu-subtitle"><a href="#" class="header__menu-subtitle">T-Shirts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="header__menu-title">woman</h2>
-                    <ul class="header__menu-list">
-                        <li><a href="#" class="header__menu-subtitle">Accessories</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Jackets & Coats</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Polos</a></li>
-                        <li><a href="#" class="header__menu-subtitle">T-Shirts</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Shirts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="header__menu-title">kids</h2>
-                    <ul class="header__menu-list">
-                        <li><a href="#" class="header__menu-subtitle">Accessories</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Jackets & Coats</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Polos</a></li>
-                        <li><a href="#" class="header__menu-subtitle">T-Shirts</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Shirts</a></li>
-                        <li><a href="#" class="header__menu-subtitle">Bags</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+
     </header>
     <main>
-        <div class="brand">
-            <section class="brand__wrapper">
-                <img class="brand__img" src="img/brand.png" alt="brand" width="800" height="765">
-                <div class="brand__title-wrapper">
-                    <h1 class="brand__title">The brand<span class="brand__subtitle">of luxerious<span
-                                class="brand__subtitle-pink"> fashion</span></span></h1>
+        <div class="arrivals">
+            <div class="container">
+                <div class="arrivals__wrapper">
+                    <h2 class="arrivals__title">new arrivals</h2>
+                    <h2 class="arrivals__subtitle">home /men / <span class="arrivals__subtitle-pink">new arrivals</span>
+                    </h2>
                 </div>
-            </section>
+            </div>
         </div>
 
-        <section class="offers">
-            <div class="container">
-                <h2 class="visually-hidden">offers</h2>
-                <ul class="offers__list">
-                    <li class="offers__item offers__item-woman">
-                        <div class="offers__item-box">
-                            <h3 class="offers__title">30% off</h3>
-                            <p class="offers__subtitles">for women</p>
-                        </div>
+        <div class="container">
+            <div class="filter">
+                <div class="filter__icon">
+                    <h2>filter</h2>
+                    <svg class="filter__img" width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <ul class="filter__row">
+                    <li class="filter__list">
+                        trending now <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                fill="#6F6E6E" />
+                        </svg>
                     </li>
-                    <li class="offers__item offers__item-man">
-                        <div class="offers__item-box">
-                            <h3 class="offers__title">hot deal</h3>
-                            <p class="offers__subtitles">for men</p>
-                        </div>
+                    <li class="filter__list">
+                        size <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                fill="#6F6E6E" />
+                        </svg>
                     </li>
-                    <li class="offers__item offers__item-kids">
-                        <div class="offers__item-box">
-                            <h3 class="offers__title">new arrivals</h3>
-                            <p class="offers__subtitles">for kids</p>
-                        </div>
-                    </li>
-                    <li class="offers__item offers__item-accesories">
-                        <div class="offers__item-box">
-                            <h3 class="offers__title">luxirous & trendy</h3>
-                            <p class="offers__subtitles">accesories</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <h2 class="fetured__title">Fetured Items</h2>
-        <p class="fetured__title-subtitle">Shop for items based on what we featured in this week</p>
-
-        <section class="products">
-            <div class="container">
-                <h2 class="visually-hidden">products</h2>
-                <ul class="products__list">
-                    <li class="products__list__product">
-                        <img src="img/product-1.png" alt="product-1" width="360" height="420">
-                        <h3 class="products__title">ellery x m'o capsule</h3>
-                        <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__price">$52.00</p>
-                    </li>
-                    <li class="products__list__product">
-                        <div class="products__product-2"><img src="img/product-2.png" alt="product-2"></div>
-                        <h3 class="products__title">Ellery x m'o capsule</h3>
-                        <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__price">$52.00</p>
-                    </li>
-                    <li class="products__list__product">
-                        <img src="img/product-3.png" alt="product-3" width="360" height="420">
-                        <h3 class="products__title">Ellery x m'o capsule</h3>
-                        <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__price">$52.00</p>
-                    </li>
-                    <li class="products__list__product">
-                        <img src="img/product-4.png" alt="product-4" width="360" height="420">
-                        <h3 class="products__title">Ellery x m'o capsule</h3>
-                        <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__price">$52.00</p>
-                    </li>
-                    <li class="products__list__product">
-                        <img src="img/product-5.png" alt="product-5" width="360" height="420">
-                        <h3 class="products__title">Ellery x m'o capsule</h3>
-                        <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__price">$52.00</p>
-                    </li>
-                    <li class="products__list__product">
-                        <img src="img/product-6.png" alt="product-6" width="360" height="420">
-                        <h3 class="products__title">Ellery x m'o capsule</h3>
-                        <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__price">$52.00</p>
+                    <li class="filter__list">price <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                fill="#6F6E6E" />
+                        </svg>
                     </li>
                 </ul>
             </div>
-        </section>
-        <div class="container__button">
-            <button type="submit" class="button__product">Browse All Product</button>
+            <div class="catalog">
+                <div class="products__list__product">
+                    <img src="img/catalog-1.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product">
+                    <div class="products__product-2">
+                        <img class="catalog-2" src="img/catalog-2.png" alt="product-6" width="360" height="420">
+                    </div>
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product catalog-3">
+                    <img src="img/catalog-3.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product">
+                    <img src="img/catalog-4.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product">
+                    <img src="img/catalog-5.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product">
+                    <img src="img/catalog-6.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product">
+                    <img src="img/catalog-7.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product">
+                    <img src="img/catalog-8.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+                <div class="products__list__product">
+                    <img src="img/catalog-9.png" alt="product-6" width="360" height="420">
+                    <h3 class="products__title">Ellery x m'o capsule</h3>
+                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products__price">$52.00</p>
+                </div>
+            </div>
         </div>
         <section class="advantages">
             <div class="container">

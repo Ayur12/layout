@@ -120,3 +120,11 @@
         justify-content: center;
     }
 }
+
+/* phone*/
+@media (min-width:375px) and (max-width: 767px) {
+    .arrivals__wrapper {
+        flex-direction: column;
+        padding: 24px 0 46px 0;
+    }
+}
