@@ -2,7 +2,7 @@
     &__wrapper {
         @include box-size(1600px, 148px);        
         margin: 0 auto;
-        background-color: #F8F3F4;
+        background-color: $soft-peach;
         justify-content: center;
     }
     
@@ -29,7 +29,7 @@
     &__form {
         width: 1600px;
         margin: 0 auto;
-        background-color: #E5E5E5;
+        background-color: $mercury;
     }
     
     &__container {
@@ -41,7 +41,7 @@
     
     &__input {
         @include box-size(360px, 45px);        
-        border: 1px solid #A4A4A4;
+        border: 1px solid $silver;
         margin-top: 21px;
     }
     
@@ -73,7 +73,7 @@
         min-height: 32px;
         margin: 16px 0 0 0;
         @include font(13px, 16px, 300);  
-        color:#B1B1B1;
+        color: $silver;
     }
     
     &__title {    
@@ -85,12 +85,12 @@
     &__subtitle {  
         @include font(24px, 29px, 300);    
         margin: 0 0 22px 0;
-        color: #000000;
+        color: $black-black;
     }
     
     &__bonus {    
         @include font(24px, 29px, 300);   
-        color: #000000;
+        color: $black-black;
         margin: 0 0 16px 0;
     }
 }

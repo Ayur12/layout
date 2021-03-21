@@ -54,4 +54,14 @@
     align-items: center;
     justify-content: center;
 }
+
+.button__product:hover {
+    background-color: $dark-pink;
+    color: $white;
+}
  
+@media (min-width:375px) and (max-width: 767px) {
+    .products__list__product {
+        margin: 0 auto;
+    }
+}
