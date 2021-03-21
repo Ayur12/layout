@@ -1,0 +1,129 @@
+.form {
+    width: 100%;
+    max-width: 1600px;  
+    margin: 0 auto; 
+    background-image: url(../img/form.png);
+    background-size: cover;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    /*display: block;
+    position: relative;  */
+    
+   /* &::after {
+        content: "";
+        background-image: url(../img/form.png);
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;    
+    }*/
+    
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__block-1 {
+        width: 50%;
+        text-align: center;
+    }
+
+    &__img {
+        padding-top: 86px;
+    }
+    
+    &__text1 {
+        width: 45%;
+        min-height: 99px;
+        padding-left: 27%;
+        padding-bottom: 126px;
+        display: flex;
+        align-items: center;
+        @include font(20px, 24px, 400);        
+        font-style: italic;        
+        color: $black;
+
+    }
+    
+    &__text2 {
+        @include font(18px, 30px, 400);
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    &__title {   
+        @include font(24px, 38px, 700);        
+        text-transform: uppercase;    
+        color: $black;
+    }
+    
+    &__block-2 {
+        width: 50%;
+        text-align: center;
+    }
+    
+    &__send {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 32px 0 0;
+    }
+    
+    &__input {
+        @include box-size(256px, 49px);
+        padding-left: 22px;
+        color: $grey;
+        background-color: $mercury;
+        border: 0.01px solid $grey-2; 
+        border-radius: 30px 0 0 30px;
+        @include font(14px, 17px, 400);
+    }
+
+    &__button {
+        @include box-size(100px, 49px); 
+        color: $white;
+        background-color: $dark-pink;
+        border: 1px solid $dark-pink; 
+        border-radius: 0 30px 30px 0;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 1024px) {
+    .form__wrapper {
+        display: block;
+    }
+    .form__block-1 {
+        width: 100%;
+        margin: 0 auto;
+        scroll-padding-top: 54px;
+    }
+    .form__block-2 {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 140px;
+    }
+    .form__title {
+        margin-top: 48px;
+    }
+    .form__text1 {
+        padding-left: 27%;
+    }
+    .form__img {
+        margin-top: 54px;
+    }
+    /*
+    .form {
+        width: 100%;
+        height: auto;   
+        position: relative;
+    .form::after {
+        content: '';
+        background-image: url(../img/form-tablet.png); 
+    }*/
+}

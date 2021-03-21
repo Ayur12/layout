@@ -1,0 +1,122 @@
+.arrivals {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $soft-peach;
+   
+
+    &__wrapper {
+        height: 148px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__title {
+        @include font(24px, 29px, 400);
+        text-transform: uppercase;
+        color: $dark-pink;
+    }
+
+    &__subtitle {
+        @include font(14px, 17px, 700);
+        text-transform: uppercase;
+        color: $grey;
+    }
+
+    &__subtitle-pink {
+        color: $dark-pink;
+    }
+}
+.carousel__wrapper {
+    height: 724px;
+}
+.carousel-item {
+    height: 724px;
+}
+.w-100 {
+    width: 50%!important;
+    margin: 0 auto;
+}
+.carousel-control-prev-icon {
+    background-color: $grey;
+}
+.carousel-control-next-icon {
+    background-color: $grey;
+}
+
+.product__info {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    &-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        align-content: center;
+    }
+
+    &-title {
+        @include font(14px, 17px 300);
+        text-transform: uppercase;
+        color: $dark-pink;
+        text-align: center;
+        margin: 41px 0 12px 0;
+    }
+
+    &-underline {
+        width: 5%;
+        height: 3px;
+        margin: 0 auto;
+        background-color: $dark-pink;
+    }
+
+    &-subtitle {
+        @include font(18px, 22px 300);
+        padding-top: 12px;
+        text-transform: uppercase;
+        color: $tundora;
+        text-align: center;
+    }
+
+    &-description {
+        margin-top: 48px;
+        padding: 0 21% 0 21%;
+        @include font(14px, 17px 300);
+        color: $tundora;
+        text-align: center;
+    }
+
+    &-price {
+        @include font(24px, 29px 300);
+        color: $dark-pink;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    &-list {
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-row {
+        @include font(14px, 17px, 400);
+        color: $grey;
+        word-spacing: 9px;
+        margin-right: 23px;
+        text-transform: uppercase;
+    }
+    &-btn-wrapper {
+        margin: 0 auto;
+        text-align: center;
+        padding: 49px 0 65px 0;
+    }
+    &-btn {
+        width: 211px;
+        height: 47px;
+        border: 1px solid $dark-pink;
+        justify-content: center;
+    }
+}
